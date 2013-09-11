@@ -5,12 +5,12 @@
   headers from cppconn/ and mysql_driver.h + mysql_util.h
   (and mysql_connection.h). This will reduce build time!
 */
-#include "mysql_connection.h"
+/*#include "mysql_connection.h"
 
 #include <cppconn/driver.h>
 #include <cppconn/exception.h>
 #include <cppconn/resultset.h>
-#include <cppconn/statement.h>
+#include <cppconn/statement.h>*/
 
 using namespace std;
 
@@ -26,11 +26,13 @@ class Predict{              //class created for decision making of which words t
         string typdStr;
 };
 class suggest{
+    public:
+        Predict prT;
 
 };
 int main(void)
 {
-cout << endl;
+/*cout << endl;
 cout << "Running 'SELECT 'Hello World!' »
    AS _message'..." << endl;
 
@@ -41,20 +43,20 @@ try {
   sql::ResultSet *res;
 
   /* Create a connection */
-  driver = get_driver_instance();
+  /*driver = get_driver_instance();
   con = driver->connect("tcp://127.0.0.1:3306", "root", "root");
   /* Connect to the MySQL test database */
-  con->setSchema("test");
+  /*con->setSchema("test");
 
   stmt = con->createStatement();
   res = stmt->executeQuery("SELECT 'Hello World!' AS _message");
   while (res->next()) {
     cout << "\t... MySQL replies: ";
     /* Access column data by alias or column name */
-    cout << res->getString("_message") << endl;
+   /* cout << res->getString("_message") << endl;
     cout << "\t... MySQL says it again: ";
     /* Access column fata by numeric offset, 1 is the first column */
-    cout << res->getString(1) << endl;
+    /*c/*out << res->getString(1) << endl;
   }
   delete res;
   delete stmt;
@@ -71,5 +73,5 @@ try {
 
 cout << endl;
 
-return EXIT_SUCCESS;
+return EXIT_SUCCESS;*/
 }
