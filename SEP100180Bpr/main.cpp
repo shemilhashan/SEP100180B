@@ -14,6 +14,20 @@
 
 using namespace std;
 
+class Predict{              //class created for decision making of which words to be predicted
+    public:
+    void setTypd(string t){
+        typdStr=t;
+    }
+    string getTypd(){
+        return typdStr;
+    }
+    private:
+        string typdStr;
+};
+class suggest{
+
+};
 int main(void)
 {
 cout << endl;
