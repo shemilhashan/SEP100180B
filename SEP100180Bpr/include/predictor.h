@@ -5,12 +5,7 @@
 class predictor ////class created for decision making of which words to be predicted
 {
    public:
-    void setTypd(string t){
-        typdStr=t;
-    }
-    string getTypd(){
-        return typdStr;
-    }
+
     private:
         string typdStr;
 };

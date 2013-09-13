@@ -1,11 +1,15 @@
 #include "predictor.h"
 
-predictor::predictor()
+predictor::predictor(string temp)
 {
-    //ctor
+
 }
 
-predictor::~predictor()
-{
-    //dtor
-}
+
+predictor::void setTypd(string t){
+        typdStr=t;
+    }
+
+    predictor::string getTypd(){
+        return typdStr;
+    }
