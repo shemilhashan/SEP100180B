@@ -2,11 +2,10 @@
 #define CONNECTDB_H
 
 
-class connectDB
+class connectDB //this will be used to connection establishment and data handling
 {
     public:
         connectDB();
-        virtual ~connectDB();
     protected:
     private:
 };

@@ -5,7 +5,4 @@ suggest::suggest()
     //ctor
 }
 
-suggest::~suggest()
-{
-    //dtor
-}
+

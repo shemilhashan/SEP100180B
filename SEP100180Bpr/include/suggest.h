@@ -2,13 +2,10 @@
 #define SUGGEST_H
 
 
-class suggest
+class suggest       //this will print the suggestions in the Open Office Libre
 {
-    public:
-        suggest();
-        virtual ~suggest();
-    protected:
-    private:
+ public:
+        predictor prT;
 };
 
 #endif // SUGGEST_H
