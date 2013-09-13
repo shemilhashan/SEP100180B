@@ -32,7 +32,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/connectDB.h" />
+		<Unit filename="include/predictor.h" />
+		<Unit filename="include/suggest.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/connectDB.cpp" />
+		<Unit filename="src/predictor.cpp" />
+		<Unit filename="src/suggest.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

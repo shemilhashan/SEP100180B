@@ -24,9 +24,9 @@ connectDB::connectEstd(){
   stmt = con->createStatement();
   res = stmt->executeQuery("SELECT 'Open Office Predictive text' AS _message");
   while (res->next()) {
-    cout << "\t... MySQL replies: ";
+    cout << "\t... word reply: ";
     cout << res->getString("_message") << endl;
-    cout << "\t... MySQL says it again: ";
+    cout << "\t... more reply: ";
     cout << res->getString(1) << endl;
   }
    delete res;
